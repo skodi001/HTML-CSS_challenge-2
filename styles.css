@@ -1,0 +1,146 @@
+body {
+  text-align: center;
+
+}
+
+
+
+.introduction {
+  text-align: center
+}
+
+.p1 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.supervisor{
+    background: #f5f4f4;
+    position: relative;
+    right: 20px;
+    top: 150px;
+    border: 5px solid #c6ebc9;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+.supervisor_img {
+float: right;
+margin-right: 30px;
+  width: 13%;
+}
+
+
+.team_builder {
+border-style: outset;
+  background-color: #f5f4f4;
+border: 5px solid red;
+border-bottom: 0px;
+border-left: 0px;
+border-right: 0px;
+
+
+}
+
+.team_builder_img {
+float: right;
+margin-right: 30px;
+  width: 13%;
+}
+
+
+.calculator {
+  background: #f5f4f4;
+  position: relative;
+  left: 20px;
+  top: 150px;
+  border: 5px solid #11698e;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+
+}
+
+.calculator_img {
+float: right;
+margin-right: 30px;
+  width: 13%;
+}
+
+.karma {
+  background: #f5f4f4;
+  position: relative;
+  top: 20px;
+  border: 5px solid #ffcda3;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.karma_img {
+  float: right;
+  margin-right: 30px;
+  width: 13%;
+}
+
+
+
+/* APPEARANCE STYLES*/
+
+
+.box {
+  font-size: 50px;
+  color: black;
+  padding: 10px;
+  text-align:center;
+  font-family: lato;
+  font-weight: 300px;
+  box-sizing: border-box;
+  width: 30%;
+
+}
+
+
+
+
+
+
+/*  LAYOUT STYLES */
+.container {
+  display: flex;
+  border: 8px solid white;
+  height: 70vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 120px 120px 120px 120px 120px;
+        grid-template-rows: 120px 120px 120px 120px 120px;
+        grid-template-areas: ". c2" "c1 c2" "c1 c3" "c4 c3" "c4 .";
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 240px 240px 240px 240px;
+        grid-template-rows: 240px 240px 240px 240px;
+        grid-template-areas: "c1" "c2" "c3" "c4";
+  }
